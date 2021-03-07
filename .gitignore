@@ -41,7 +41,6 @@ venv/
 eblogs.txt
 .metals
 
-
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
