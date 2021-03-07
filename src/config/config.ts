@@ -1,13 +1,13 @@
 export const config = {
   dev: {
-    username: 'udagrammike',
-    password: 'udagrammike',
-    database: 'udagrammike',
-    host: 'udagrammike.c5k8grnwrirm.sa-east-1.rds.amazonaws.com',
-    dialect: 'postgres',
-    aws_region: 'sa-east-1',
-    aws_profile: 'mike-udacity',
-    aws_media_bucket: 'udagram-mike12-dev',
+    username: process.env.username,
+    password: process.env.password,
+    database: process.env.database,
+    host: process.env.host,
+    dialect: process.env.dialect,
+    aws_region: process.env.aws_region,
+    aws_profile: process.env.aws_profile,
+    aws_media_bucket: process.env.aws_media_bucket,
   },
   prod: {
     username: '',
@@ -16,4 +16,8 @@ export const config = {
     host: '',
     dialect: 'postgres',
   },
+  jwt: {
+    secret: process.env.secret,
+  },
 };
+console.log(config);
